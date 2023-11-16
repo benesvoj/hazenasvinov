@@ -62,7 +62,7 @@ export const SearchContainer = styled.div`
     transition: 300ms ease all;
 
     &::placeholder {
-      color: #F5F7F8
+      color: ${({theme}) => theme.colors.text.primary};
     }
     &:focus {
         outline: none;
@@ -72,9 +72,8 @@ export const SearchContainer = styled.div`
   button {
     padding: 1em 3.5em;
     border: none;
-    background-color: #F4CE14;
-    color: #F5F7F8;
-    font-weight: 100;
+    background-color: ${({theme}) => theme.colors.general.yellow};;
+    color: ${({theme}) => theme.colors.text.primary};;
     text-transform: uppercase;
   }
 `
@@ -87,13 +86,13 @@ export const DiscoverMoreButton = styled.div`
   width: 60%;
   padding: 1em 2.5em;
   text-align: left;
-  background-color: #F4CE14;
+  background-color: ${({theme}) => theme.colors.yellow};;
 `
 export const DiscoverMoreButtonLink = styled(Link)`
-  color: #F5F7F8;
+  color: ${({theme}) => theme.colors.text.primary};
   font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: ${({theme}) => theme.fontWeights.bold};
   text-underline-offset: 0.5rem;
 `
 

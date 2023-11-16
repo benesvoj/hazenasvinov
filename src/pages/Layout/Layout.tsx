@@ -1,6 +1,10 @@
 import {NavigationBar} from "../../components/NavigationBar/NavigationBar";
 import styled from "styled-components";
 import {Hero} from "./Hero/Hero";
+import {FlowBar} from "../../components/FlowBar/FlowBar";
+import {ArticlesPreview} from "../../components/ArticlesPreview/ArticlesPreview";
+import {hashtags} from "../../api/hashtags";
+import {sponzors} from "../../api/sponzors";
 
 export const Layout = () => {
     return (
@@ -12,9 +16,9 @@ export const Layout = () => {
                 <HeroSection>
                     <Hero/>
                 </HeroSection>
-                <div>
-                    <h1>hastags</h1>
-                </div>
+                <FlowBar items={hashtags} />
+                <ArticlesPreview />
+                <FlowBar items={sponzors} />
                 <div>
                     <h1>tables</h1>
                 </div>
@@ -32,7 +36,6 @@ export const Layout = () => {
 const HeroSection = styled.section`
   position: relative;
   width: 100%;
-  height: 100vh;
 `
 
 const LayoutContainer = styled.div`

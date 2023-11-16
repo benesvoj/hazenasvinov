@@ -19,7 +19,7 @@ export const articles = [
         id: 2,
         title: 'Remiza z moravského derby',
         content: 'K dalšímu utkání jsme zajížděli na hřiště nováčka z Brna, který se však rozhodně jako nováček nechová, a nebýt administrativní chyby činovníků oddílu, bylo by toto družstvo po osmém kole na druhém místě tabulky. První poločas byl brankově bohatý, družstva se přetahovaly o vedení, až v závěru jsem dokázali soupeři odskočit a vyhrát 1. poločas poměrem 14:12',
-        imgUrl: assets.article1
+        imgUrl: assets.bgHero
     },
     {
         id: 3,

@@ -37,14 +37,14 @@ const NavigationLinksContainer = styled.div`
 
 const NavLink = styled(Link)`
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: ${({theme}) => theme.fontWeights.bold};
   text-decoration: none;
-  color: #F5F7F8;
+  color: ${({theme}) => theme.colors.text.primary};
   font-size: 1.5em;
-  text-shadow: 0 0 0.5em #000000;
   
   &:hover {
-    color: #F4CE14;
+    color: ${({theme}) => theme.colors.general.yellow};
+    text-decoration: underline;
   }
 `
 const LogoContainer = styled(Link)`
