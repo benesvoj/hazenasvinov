@@ -1,4 +1,4 @@
 export const urls = {
-    home: '/',
-    about: '/about',
+  home: '/',
+  about: '/about',
 }

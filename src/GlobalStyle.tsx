@@ -1,5 +1,5 @@
-import {createGlobalStyle} from "styled-components";
-import {Normalize} from "styled-normalize";
+import {createGlobalStyle} from 'styled-components'
+import {Normalize} from 'styled-normalize'
 
 export const BasicStyles = createGlobalStyle`
   * {
@@ -19,10 +19,10 @@ export const BasicStyles = createGlobalStyle`
 `
 
 export function GlobalStyles() {
-    return (
-        <>
-            <Normalize />
-            <BasicStyles/>
-        </>
-    );
+  return (
+    <>
+      <Normalize />
+      <BasicStyles />
+    </>
+  )
 }

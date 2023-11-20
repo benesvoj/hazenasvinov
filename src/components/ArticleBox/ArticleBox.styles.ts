@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ArticleBoxContainer = styled.div`
-    background-color: ${({theme}) => theme.colors.general.black[40]};
-    padding: 1em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+  background-color: ${({theme}) => theme.colors.general.black[40]};
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 `
-export const BoxContainer = styled.div<{ imageurl: string }>`
+export const BoxContainer = styled.div<{imageurl: string}>`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

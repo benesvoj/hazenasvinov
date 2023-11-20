@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import {assets} from "../../../assets";
-import {Link} from "react-router-dom";
+import styled from 'styled-components'
+import {assets} from '../../../assets'
+import {Link} from 'react-router-dom'
 
 export const HeroContainer = styled.div`
   background-image: url(${assets.heroBg});
@@ -65,15 +65,15 @@ export const SearchContainer = styled.div`
       color: ${({theme}) => theme.colors.text.primary};
     }
     &:focus {
-        outline: none;
+      outline: none;
     }
   }
 
   button {
     padding: 1em 3.5em;
     border: none;
-    background-color: ${({theme}) => theme.colors.general.yellow};;
-    color: ${({theme}) => theme.colors.text.primary};;
+    background-color: ${({theme}) => theme.colors.general.yellow};
+    color: ${({theme}) => theme.colors.text.primary};
     text-transform: uppercase;
   }
 `
@@ -86,7 +86,7 @@ export const DiscoverMoreButton = styled.div`
   width: 60%;
   padding: 1em 2.5em;
   text-align: left;
-  background-color: ${({theme}) => theme.colors.yellow};;
+  background-color: ${({theme}) => theme.colors.yellow};
 `
 export const DiscoverMoreButtonLink = styled(Link)`
   color: ${({theme}) => theme.colors.text.primary};

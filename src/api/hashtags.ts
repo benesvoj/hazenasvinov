@@ -1,3 +1,1 @@
-export const hashtags = [
-    'dyckySvinov', 'svinov', 'hazenaSvinov', 'svinovskyKemp', 'mcr2011Svinov'
-]
+export const hashtags = ['dyckySvinov', 'svinov', 'hazenaSvinov', 'svinovskyKemp', 'mcr2011Svinov']

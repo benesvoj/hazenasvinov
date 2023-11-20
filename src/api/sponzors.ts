@@ -1,3 +1,1 @@
-export const sponzors = [
-    'Ostrava mesto', 'UMOb Svinov', 'Strabag'
-]
+export const sponzors = ['Ostrava mesto', 'UMOb Svinov', 'Strabag']

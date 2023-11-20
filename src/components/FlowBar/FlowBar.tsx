@@ -1,18 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 type FlowBarProps = {
-    items: string[];
+  items: string[]
 }
 
-
 export const FlowBar = (props: FlowBarProps) => {
-
-    return (
-        <HashtagBarContainer>
-            {props.items.map((item, index) => <Hashtag key={index}>#{item}</Hashtag>)
-            }
-        </HashtagBarContainer>
-    )
+  return (
+    <HashtagBarContainer>
+      {props.items.map((item, index) => (
+        <Hashtag key={index}>#{item}</Hashtag>
+      ))}
+    </HashtagBarContainer>
+  )
 }
 
 const HashtagBarContainer = styled.div`

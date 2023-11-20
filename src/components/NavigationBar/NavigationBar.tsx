@@ -1,26 +1,26 @@
-import styled from "styled-components";
-import {Link} from "react-router-dom";
-import {ReactComponent as Logo} from '../../assets/img/logoSvinov.svg';
-import {urls} from "../../utils/urls";
+import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+import {ReactComponent as Logo} from '../../assets/img/logoSvinov.svg'
+import {urls} from '../../utils/urls'
 
 export const NavigationBar = () => {
-    return (
-        <NavigationBarContainer>
-            <NavigationLinksContainer>
-                <NavLink to={'#'}>Home</NavLink>
-                <NavLink to={'#'}>Články</NavLink>
-                <NavLink to={'#'}>Tabulky</NavLink>
-            </NavigationLinksContainer>
-            <LogoContainer to={urls.home}>
-                <Logo/>
-            </LogoContainer>
-            <NavigationLinksContainer>
-                <NavLink to={'#'}>Mládež</NavLink>
-                <NavLink to={''}>O oddílu</NavLink>
-                <NavLink to={'#'}>Kronika</NavLink>
-            </NavigationLinksContainer>
-        </NavigationBarContainer>
-    )
+  return (
+    <NavigationBarContainer>
+      <NavigationLinksContainer>
+        <NavLink to={'#'}>Home</NavLink>
+        <NavLink to={'#'}>Články</NavLink>
+        <NavLink to={'#'}>Tabulky</NavLink>
+      </NavigationLinksContainer>
+      <LogoContainer to={urls.home}>
+        <Logo />
+      </LogoContainer>
+      <NavigationLinksContainer>
+        <NavLink to={'#'}>Mládež</NavLink>
+        <NavLink to={''}>O oddílu</NavLink>
+        <NavLink to={'#'}>Kronika</NavLink>
+      </NavigationLinksContainer>
+    </NavigationBarContainer>
+  )
 }
 
 const NavigationBarContainer = styled.nav`
@@ -41,7 +41,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
   color: ${({theme}) => theme.colors.text.primary};
   font-size: 1.5em;
-  
+
   &:hover {
     color: ${({theme}) => theme.colors.general.yellow};
     text-decoration: underline;
